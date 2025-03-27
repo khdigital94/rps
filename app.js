@@ -54,6 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	if (roundsPlayed === 5) {
 		let winnerMsg = humanScore > computerScore ? "Congratulations, you won! 🥳" : "Oh, looks like the computer won. 😕";
+		if (humanScore === computerScore) {
+			winnerMsg = "Seems like we have a draw! 😅";
+		}
 		console.log(winnerMsg);
 	}
 });
